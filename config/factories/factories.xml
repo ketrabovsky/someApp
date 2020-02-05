@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<factories>
+    <factory class="AnimalFactory">
+        <allowedTypes>
+            <type name="dog"/>
+            <type name="cat"/>
+        </allowedTypes>
+    </factory>
+</factories>

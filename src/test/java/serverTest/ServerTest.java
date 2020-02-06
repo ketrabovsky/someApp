@@ -39,22 +39,19 @@ public class ServerTest {
         IServerConnection connection1 = mock(IServerConnection.class);
         IServerConnection connection2 = mock(IServerConnection.class);
         final String connectionName = "connection1";
-        IServer server = new Server();
 
         server.add_connection(connectionName, connection1);
-        server.add_connection(connectionName, connection2);
+//        server.add_connection(connectionName, connection2);
     }
 
     @Test
     public void queringForConnectionShouldReturnNullIfDoesntExist() {
         final String connectionName = "connection1";
-        IServer server = new Server();
         assertNull(server.getConnection(connectionName));
     }
 
     @Test
     public void getAllConnectionNames() throws Server.ServerConnectionExists {
-        IServer server = new Server();
         IServerConnection conn = mock(IServerConnection.class);
         final String connectionName1 = "connection1";
         final String connectionName2 = "connection2";

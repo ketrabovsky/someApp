@@ -41,7 +41,7 @@ public class ServerTest {
         final String connectionName = "connection1";
 
         server.add_connection(connectionName, connection1);
-//        server.add_connection(connectionName, connection2);
+        server.add_connection(connectionName, connection2);
     }
 
     @Test
